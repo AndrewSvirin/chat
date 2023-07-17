@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="py-5 text-center">
 			<h2>Чат программа</h2>
-			<p class="lead">Укажите ваше имя и начинайте переписку</p>
+
 		</div>
 		<div class="row">
 			<div class="col-6">
@@ -77,7 +77,7 @@
 
 			// Отслеживаем нажатие на кнопку в форме сообщений
 			$form.submit(function(event) {
-                socket.emit('send mess', {mess: $textarea.val(),className: alertClass})
+                socket.emit('send mess', {mess: $textarea.val(), className: alertClass})
 				// Предотвращаем классическое поведение формы
 				event.preventDefault();
 				// В сокет отсылаем новое событие 'send mess',
@@ -86,6 +86,8 @@
 				$textarea.val('');
 			});
 
+            // Встраиваем полученное сообщение в блок с сообщениями
+			// У блока с сообщением будет тот класс, который соответвует пользователю что его отправил
 			// Здесь отслеживаем событие 'add mess', 
 			// которое должно приходить из сокета в случае добавления нового сообщения
 			socket.on('add mess', function(data) {
@@ -96,11 +98,9 @@
                 }
                 else
                 {
-                    $all_messages.append("<div><b>" + data.name + "</b>: " + data.mess + "</div>");
+                    $all_messages.append("<div class='alert alert-" + data.className + "'<b>" + data.name + "</b>: " + data.mess + "</div>");
                     // socket.emit('send mess', {mess: $textarea.val(), name: $name.val(), className: alertClass});
                 }
-				// Встраиваем полученное сообщение в блок с сообщениями
-				// У блока с сообщением будет тот класс, который соответвует пользователю что его отправил
 				
 			});
 

@@ -1,0 +1,7 @@
+
+[2023-07-11 15:39:46] / GET localhost:3000 
+[2023-07-11 15:39:47] / POST localhost:3000 
+[2023-07-11 15:39:47] /chat GET localhost:3000 
+[2023-07-11 15:39:48] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObZtJCZ 
+[2023-07-11 15:39:52] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObZtJCZ 
+[2023-07-11 15:40:11] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObZtJCZ 
