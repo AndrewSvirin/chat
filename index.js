@@ -50,8 +50,12 @@ io.sockets.on('connection', function(socket) {
 		fs.appendFile('readme.log',dan, function(err,data){})
 	}
 	
-    socket.name = nickName
+	socket.name = nickName
+	socket.emit('init',socket.name)
+	nickName = undefined
+
 	readLogFun('WEBSOCKET')
+
     io.sockets.emit(`add mess`, {mess: 'Вошёл в чат', name: socket.name, status:'in'})
 	// Добавление нового соединения в массив
 	connections.push(socket);

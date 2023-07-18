@@ -5,3 +5,17 @@
 [2023-07-11 15:39:48] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObZtJCZ 
 [2023-07-11 15:39:52] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObZtJCZ 
 [2023-07-11 15:40:11] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObZtJCZ 
+[2023-07-22 11:55:59] / GET localhost:3000 
+[2023-07-22 11:56:03] /chat GET localhost:3000 
+[2023-07-22 11:56:06] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObeDhwj 
+[2023-07-22 11:56:06] / GET localhost:3000 
+[2023-07-22 11:56:07] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObeDhwj 
+[2023-07-22 11:56:16] / POST localhost:3000 
+[2023-07-22 11:56:16] /chat GET localhost:3000 
+[2023-07-22 11:56:16] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObeDkaH 
+[2023-07-22 11:56:21] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObeDkaH 
+[2023-07-22 11:56:23] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObeDkaH 
+[2023-07-22 11:56:23] /chat GET localhost:3000 
+[2023-07-22 11:56:23] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObeDmMB 
+[2023-07-22 11:56:23] / GET localhost:3000 
+[2023-07-22 11:56:23] ::ffff:127.0.0.1 WEBSOCKET /socket.io/?EIO=4&transport=polling&t=ObeDmMB 

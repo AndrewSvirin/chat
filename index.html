@@ -75,6 +75,15 @@
 			var $textarea = $("#message"); // Текстовое поле
 			var $all_messages = $("#all_mess"); // Блок с сообщениями
 
+			socket.on('init',function(name)
+			{
+				socket.name = name
+				if(socket.name == undefined)
+				{
+					$(location).attr('href', 'http://localhost:3000')
+				}
+			})
+
 			// Отслеживаем нажатие на кнопку в форме сообщений
 			$form.submit(function(event) {
                 socket.emit('send mess', {mess: $textarea.val(), className: alertClass})
